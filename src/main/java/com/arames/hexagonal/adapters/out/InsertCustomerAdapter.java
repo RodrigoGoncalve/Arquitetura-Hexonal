@@ -3,12 +3,12 @@ package com.arames.hexagonal.adapters.out;
 import com.arames.hexagonal.adapters.out.repository.CustomerRepository;
 import com.arames.hexagonal.adapters.out.repository.mapper.CustomerEntityMapper;
 import com.arames.hexagonal.application.core.domain.Customer;
-import com.arames.hexagonal.application.ports.out.InsertCustomeroutputPort;
+import com.arames.hexagonal.application.ports.out.InsertCustomerOutputPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class InsertCustomerAdapter implements InsertCustomeroutputPort {
+public class InsertCustomerAdapter implements InsertCustomerOutputPort {
 
     @Autowired
     private CustomerRepository customerRepository;
