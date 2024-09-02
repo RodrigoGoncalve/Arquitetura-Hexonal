@@ -1,7 +1,6 @@
 package com.arames.hexagonal.adapters.out;
 
 import com.arames.hexagonal.adapters.out.repository.CustomerRepository;
-import com.arames.hexagonal.adapters.out.repository.entity.CustomerEntity;
 import com.arames.hexagonal.adapters.out.repository.mapper.CustomerEntityMapper;
 import com.arames.hexagonal.application.core.domain.Customer;
 import com.arames.hexagonal.application.ports.out.FindCustomerByIdOutputPort;
