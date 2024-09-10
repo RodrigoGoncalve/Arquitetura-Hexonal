@@ -1,4 +1,4 @@
-# Aplicação Java 17 com Spring Boot 3, Kafka, MongoDB, WireMock e Offset Explorer
+# Aplicação Java 17 com Spring Boot 3, Kafka, MongoDB, WireMock, ArchUnit e Offset Explorer
 
 Este projeto é uma aplicação Java baseada no Spring Boot 3, utilizando Kafka e MongoDB como principais tecnologias de mensageria e banco de dados. O WireMock é utilizado para simulação de serviços HTTP, e o Offset Explorer para gerenciar tópicos do Kafka.
 
