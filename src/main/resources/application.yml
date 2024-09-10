@@ -1,4 +1,5 @@
-spring.application.name=hexagonal
+server:
+  port: 8081
 
 arantes:
   client:
@@ -8,5 +9,10 @@ arantes:
 spring:
   data:
     mongodb:
-      rul: mongo://localhost:27017/hexagonal
+      host: localhost
+      port: 27017
+      authentication-database: admin
+      username: root
+      password: example
+      database: hexagonal
 

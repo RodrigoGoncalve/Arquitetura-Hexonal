@@ -1,22 +1,23 @@
 package com.arantes.hexagonal.application.core.usecase;
 
+import com.arantes.hexagonal.application.ports.in.DeleteCustomerByIdImputPort;
 import com.arantes.hexagonal.application.ports.in.FindCustomerByIdImputPort;
-import com.arantes.hexagonal.application.ports.out.DeleteCustomerByIdOutimputPort;
+import com.arantes.hexagonal.application.ports.out.DeleteCustomerByIdOutputPort;
 
-public class DeleteCustomerByIdUserCase implements DeleteCustomerByIdOutimputPort {
+public class DeleteCustomerByIdUserCase implements DeleteCustomerByIdImputPort {
 
     private final FindCustomerByIdImputPort findCustomerByIdImputPort;
-    private final DeleteCustomerByIdOutimputPort deleteCustomerByIdOutimputPort;
+    private final DeleteCustomerByIdOutputPort deleteCustomerByIdOutputPort;
 
     public DeleteCustomerByIdUserCase(FindCustomerByIdImputPort findCustomerByIdImputPort,
-                                      DeleteCustomerByIdOutimputPort deleteCustomerByIdOutimputPort) {
+                                      DeleteCustomerByIdOutputPort deleteCustomerByIdOutputPort) {
         this.findCustomerByIdImputPort = findCustomerByIdImputPort;
-        this.deleteCustomerByIdOutimputPort = deleteCustomerByIdOutimputPort;
+        this.deleteCustomerByIdOutputPort = deleteCustomerByIdOutputPort;
     }
 
     @Override
     public void delete(String id){
         findCustomerByIdImputPort.find(id);
-        deleteCustomerByIdOutimputPort.delete(id);
+        deleteCustomerByIdOutputPort.delete(id);
     }
 }

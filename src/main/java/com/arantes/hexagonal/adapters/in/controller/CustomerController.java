@@ -56,7 +56,7 @@ public class CustomerController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> delete(@PathVariable String id){
+    public ResponseEntity<Void> delete(@PathVariable final String id){
         deleteCustomerByIdImputPort.delete(id);
         return ResponseEntity.noContent().build();
     }

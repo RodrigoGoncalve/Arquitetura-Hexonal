@@ -15,6 +15,6 @@ public class FindCustomerByIdUseCase implements FindCustomerByIdImputPort {
     @Override
     public Customer find(String id){
         return findCustomerByIdOutputPort
-                .find(id).orElseThrow(() -> new RuntimeException("Customer no fund"));
+                .find(id).orElseThrow(() -> new RuntimeException("Customer not fund"));
     }
 }
