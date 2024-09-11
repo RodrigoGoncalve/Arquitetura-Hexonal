@@ -4,10 +4,8 @@ import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.junit.ArchTest;
 import com.tngtech.archunit.lang.ArchRule;
 import com.tngtech.archunit.library.Architectures;
-import org.springframework.boot.test.context.SpringBootTest;
 
 @AnalyzeClasses(packages = "com.arantes.hexagonal")
-@SpringBootTest
 public class LayeredArchitectureTest {
 
     @ArchTest
